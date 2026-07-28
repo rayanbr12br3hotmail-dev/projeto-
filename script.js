@@ -1,20 +1,20 @@
 function toggleMode() {
   const html = document.documentElement
-  html.classList.toggle("light")
+  html.classList.toggle("golden")
 
   //pegar a tag img
   const img = document.querySelector("#profile img")
 
   //substituir a imagem
-  if (html.classList.contains("light")) {
+  if (html.classList.contains("golden")) {
     //se tiver no modo light mode, adicionar a img light
     img.setAttribute(
       "src",
-      "./assets/avatar-light.png",
-      "alt = Foto de mayk brito sorrindo, ele está utilizando um oculos PerformanceNavigationTiming, uma jaqueta de couro escura juntamente com uma blusa preta por baixo. E o fundo da imagem está na cor azul.",
+      "./assets/logonubiasemijoias.webp",
+      "alt =A imagem retrada a letra N S em dourado com o fundo preto.",
     )
   } else {
     //se tiver, no modo  normal, manter a imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/logonubiasemijoias.webp")
   }
 }
